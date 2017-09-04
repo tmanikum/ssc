@@ -1,5 +1,7 @@
 package rewards.internal;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import rewards.AccountContribution;
 import rewards.Dining;
 import rewards.RewardConfirmation;
@@ -25,13 +27,13 @@ import common.money.MonetaryAmount;
  * to cause component-scan to detect and load this bean.
  * Configure Dependency Injection for all 3 dependencies.  
  * Decide if you should use field level or constructor injection. */
-
+@Service
 public class RewardNetworkImpl implements RewardNetwork {
-
+	@Autowired
 	private AccountRepository accountRepository;
-
+    @Autowired
 	private RestaurantRepository restaurantRepository;
-
+    @Autowired
 	private RewardRepository rewardRepository;
 
 	/**

@@ -5,6 +5,7 @@ import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 
 import config.RewardsConfig;
@@ -17,7 +18,8 @@ import config.RewardsConfig;
 // Remove or comment-out the @Import and dataSource bean method; everything
 // will now be defined via XML.
 // Save your work and re-run the last test, it should pass.
-@Import(RewardsConfig.class)
+// @Import(RewardsConfig.class)
+@ImportResource( {"config/rewards-config.xml","rewards/test-infrastructure-config.xml"})
 public class TestInfrastructureConfig {
 
 	/**

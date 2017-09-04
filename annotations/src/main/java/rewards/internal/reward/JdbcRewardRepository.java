@@ -8,6 +8,8 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import rewards.AccountContribution;
 import rewards.Dining;
 import rewards.RewardConfirmation;
@@ -24,9 +26,9 @@ import common.datetime.SimpleDate;
  * Configure Dependency Injection for dataSource.  
  * Decide if you should use field level or setter injection. 
  */
-
+@Repository
 public class JdbcRewardRepository implements RewardRepository {
-
+    @Autowired
 	private DataSource dataSource;
 
 	/**
