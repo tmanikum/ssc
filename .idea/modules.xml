@@ -19,7 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/ms-accounts-server/ms-accounts-server.iml" filepath="$PROJECT_DIR$/ms-accounts-server/ms-accounts-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-accounts-server-solution/ms-accounts-server-solution.iml" filepath="$PROJECT_DIR$/ms-accounts-server-solution/ms-accounts-server-solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-discovery-server/ms-discovery-server.iml" filepath="$PROJECT_DIR$/ms-discovery-server/ms-discovery-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ms-discovery-server-solution/ms-discovery-server-solution.iml" filepath="$PROJECT_DIR$/ms-discovery-server-solution/ms-discovery-server-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-discovery-server-solution/bin/ms-discovery-server-solution (1).iml" filepath="$PROJECT_DIR$/ms-discovery-server-solution/bin/ms-discovery-server-solution (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-discovery-server-solution/ms-discovery-server-solution (2).iml" filepath="$PROJECT_DIR$/ms-discovery-server-solution/ms-discovery-server-solution (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-web-client/ms-web-client.iml" filepath="$PROJECT_DIR$/ms-web-client/ms-web-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-web-client-solution/ms-web-client-solution.iml" filepath="$PROJECT_DIR$/ms-web-client-solution/ms-web-client-solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvc/mvc.iml" filepath="$PROJECT_DIR$/mvc/mvc.iml" />

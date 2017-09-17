@@ -1,18 +1,14 @@
 package rewards.internal.restaurant;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.sql.DataSource;
-
+import common.money.Percentage;
 import org.springframework.dao.EmptyResultDataAccessException;
-
+import org.springframework.jdbc.core.JdbcTemplate;
 import rewards.Dining;
 import rewards.internal.account.Account;
 
-import common.money.Percentage;
+import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  * Loads restaurants from a data source using the JDBC API.
@@ -25,16 +21,29 @@ import common.money.Percentage;
 
 public class JdbcRestaurantRepository implements RestaurantRepository {
 
-	private DataSource dataSource;
+	//private DataSource dataSource;
+    private JdbcTemplate jdbcTemplate;
 
 	public JdbcRestaurantRepository(DataSource dataSource) {
-		this.dataSource = dataSource;
+
+	    //this.dataSource = dataSource;
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 
 	public Restaurant findByMerchantNumber(String merchantNumber) {
 		String sql = "select MERCHANT_NUMBER, NAME, BENEFIT_PERCENTAGE, BENEFIT_AVAILABILITY_POLICY from T_RESTAURANT where MERCHANT_NUMBER = ?";
-		Restaurant restaurant = null;
-		Connection conn = null;
+		 Restaurant restaurant = jdbcTemplate.queryForObject(sql, (rs, rowNum) -> {
+             String name = rs.getString("NAME");
+             String number = rs.getString("MERCHANT_NUMBER");
+             Percentage benefitPercentage = Percentage.valueOf(rs.getString("BENEFIT_PERCENTAGE"));
+             // map to the object
+             Restaurant restaurant1 = new Restaurant(number, name);
+             restaurant1.setBenefitPercentage(benefitPercentage);
+             restaurant1.setBenefitAvailabilityPolicy(mapBenefitAvailabilityPolicy(rs));
+             return restaurant1;
+         },merchantNumber);
+
+/*		Connection conn = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
 		try {
@@ -68,8 +77,9 @@ public class JdbcRestaurantRepository implements RestaurantRepository {
 				} catch (SQLException ex) {
 				}
 			}
-		}
+		} */
 		return restaurant;
+
 	}
 
 	/**

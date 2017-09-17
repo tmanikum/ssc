@@ -1,16 +1,14 @@
 package rewards.internal.account;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.sql.DataSource;
-
-import org.springframework.dao.EmptyResultDataAccessException;
-
 import common.money.MonetaryAmount;
 import common.money.Percentage;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+
+import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  * Loads accounts from a data source using the JDBC API.
@@ -23,13 +21,15 @@ import common.money.Percentage;
 public class JdbcAccountRepository implements AccountRepository {
 
 	private DataSource dataSource;
-
+	private JdbcTemplate jdbcTemplate;
 	public JdbcAccountRepository(DataSource dataSource) {
+
 		this.dataSource = dataSource;
+		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 
 	// TODO-07: OPTIONAL STEP. Refactor this method using a ResultSetExtractor.
-    //          (Note: If you prefer, use a lambda insead of the AccountExtractor)
+    //          (Note: If you prefer, use a lambda instead of the AccountExtractor)
 	// 1. Implement a ResultSetExtractor called AccountExtractor
 	// 2. Make this a private inner class and let extractData() call mapAccount() to do all the work.
 	// 3. Use the JdbcTemplate to redo the SELECT below, using your new AccountExtractor
@@ -42,7 +42,11 @@ public class JdbcAccountRepository implements AccountRepository {
 			"left outer join T_ACCOUNT_BENEFICIARY b " +
 			"on a.ID = b.ACCOUNT_ID " +
 			"where c.ACCOUNT_ID = a.ID and c.NUMBER = ?";
-		
+
+
+
+		return jdbcTemplate.query(sql,new AccountExtractor(), creditCardNumber);
+		/*
 		Account account = null;
 		Connection conn = null;
 		PreparedStatement ps = null;
@@ -78,7 +82,7 @@ public class JdbcAccountRepository implements AccountRepository {
 				}
 			}
 		}
-		return account;
+		return account; */
 	}
 
 	// TODO-06: OPTIONAL STEP. Refactor this method to use Spring's JdbcTemplate.
@@ -86,7 +90,10 @@ public class JdbcAccountRepository implements AccountRepository {
 	// 2. Rerun the JdbcAccountRepositoryTests. When they pass, you are done.
 	public void updateBeneficiaries(Account account) {
 		String sql = "update T_ACCOUNT_BENEFICIARY SET SAVINGS = ? where ACCOUNT_ID = ? and NAME = ?";
-		Connection conn = null;
+		for (Beneficiary beneficiary : account.getBeneficiaries()) {
+			jdbcTemplate.update(sql,beneficiary.getSavings().asBigDecimal(), account.getEntityId(),beneficiary.getName() );
+		}
+		/*Connection conn = null;
 		PreparedStatement ps = null;
 		try {
 			conn = dataSource.getConnection();
@@ -114,7 +121,7 @@ public class JdbcAccountRepository implements AccountRepository {
 				} catch (SQLException ex) {
 				}
 			}
-		}
+		} */
 	}
 
 	/**
@@ -157,4 +164,10 @@ public class JdbcAccountRepository implements AccountRepository {
 		Percentage allocationPercentage = Percentage.valueOf(rs.getString("BENEFICIARY_ALLOCATION_PERCENTAGE"));
 		return new Beneficiary(name, allocationPercentage, savings);
 	}
+
+    private class AccountExtractor implements ResultSetExtractor<Account> {
+	    public Account extractData(ResultSet rs) throws SQLException{
+	        return mapAccount(rs);
+        }
+    }
 }

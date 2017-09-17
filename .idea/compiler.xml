@@ -23,7 +23,8 @@
         <module name="ms-accounts-server" />
         <module name="ms-accounts-server-solution" />
         <module name="ms-discovery-server" />
-        <module name="ms-discovery-server-solution" />
+        <module name="ms-discovery-server-solution (1)" />
+        <module name="ms-discovery-server-solution (2)" />
         <module name="ms-web-client" />
         <module name="ms-web-client-solution" />
         <module name="mvc" />
@@ -66,7 +67,8 @@
       <module name="ms-accounts-server" target="1.8" />
       <module name="ms-accounts-server-solution" target="1.8" />
       <module name="ms-discovery-server" target="1.8" />
-      <module name="ms-discovery-server-solution" target="1.8" />
+      <module name="ms-discovery-server-solution (1)" target="1.5" />
+      <module name="ms-discovery-server-solution (2)" target="1.8" />
       <module name="ms-web-client" target="1.8" />
       <module name="ms-web-client-solution" target="1.8" />
       <module name="mvc" target="1.8" />
