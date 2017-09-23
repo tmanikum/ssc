@@ -1,10 +1,6 @@
 package rewards;
 
-import java.util.Properties;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
+import config.RewardsConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -13,9 +9,10 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
 
-import config.RewardsConfig;
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+import java.util.Properties;
 
 
 @Configuration
@@ -52,13 +49,18 @@ public class SystemTestConfig {
 		props.setProperty("hibernate.format_sql", "true");
 
 		// Your turn ... configure the emf like the example in the slides ...
-		
+		emf.setDataSource(dataSource);
+		emf.setPersistenceUnitName("rewardNetwork");
 		return emf;
 	}
 
 	//	TODO-08: Define a JpaTransactionManager bean with the name transactionManager. 
 	//	The @Bean method should accept a parameter of type EntityManagerFactory.
 	//	Use this parameter when instantiating the JpaTransactionManager.
-	//	Run the RewardNetworkTests, it should pass. 
+	//	Run the RewardNetworkTests, it should pass.
+	@Bean
+	public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+		return new JpaTransactionManager(entityManagerFactory);
+	}
 		
 }

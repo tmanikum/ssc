@@ -35,6 +35,12 @@ public class JdbcAccountRepository implements AccountRepository {
 	// 3. Use the JdbcTemplate to redo the SELECT below, using your new AccountExtractor
 	// 4. When complete, save all changes and rerun the JdbcAccountRepositoryTests class. It should pass.
     // 5. Congratulations - you have finished the lab
+
+	private class AccountExtractor implements ResultSetExtractor<Account> {
+		public Account extractData(ResultSet rs) throws SQLException{
+			return mapAccount(rs);
+		}
+	}
 	public Account findByCreditCard(String creditCardNumber) {
 		String sql = "select a.ID as ID, a.NUMBER as ACCOUNT_NUMBER, a.NAME as ACCOUNT_NAME, c.NUMBER as CREDIT_CARD_NUMBER, " +
 			"	b.NAME as BENEFICIARY_NAME, b.ALLOCATION_PERCENTAGE as BENEFICIARY_ALLOCATION_PERCENTAGE, b.SAVINGS as BENEFICIARY_SAVINGS " +
@@ -165,9 +171,5 @@ public class JdbcAccountRepository implements AccountRepository {
 		return new Beneficiary(name, allocationPercentage, savings);
 	}
 
-    private class AccountExtractor implements ResultSetExtractor<Account> {
-	    public Account extractData(ResultSet rs) throws SQLException{
-	        return mapAccount(rs);
-        }
-    }
+
 }

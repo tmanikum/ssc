@@ -1,6 +1,10 @@
 package rewards.internal.restaurant;
 
 
+import org.springframework.data.repository.Repository;
+
+import java.io.Serializable;
+
 /**
  * Loads restaurant aggregates. Called by the reward network to find and reconstitute Restaurant entities from an
  * external form such as a set of RDMS rows.
@@ -10,6 +14,6 @@ package rewards.internal.restaurant;
 
 //	TODO-05: Alter this interface to extend a Spring Data Interface.
 //	Define a method that will look up a Restaurant by a provided merchant number.
-public interface RestaurantRepository {
+public interface RestaurantRepository<T, ID extends Serializable> extends Repository<T,ID> {
 
 }

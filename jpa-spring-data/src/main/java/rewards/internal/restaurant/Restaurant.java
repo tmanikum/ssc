@@ -1,18 +1,11 @@
 package rewards.internal.restaurant;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-
+import common.money.MonetaryAmount;
+import common.money.Percentage;
 import rewards.Dining;
 import rewards.internal.account.Account;
 
-import common.money.MonetaryAmount;
-import common.money.Percentage;
+import javax.persistence.*;
 
 /**
  * A restaurant establishment in the network. Like AppleBee's.
@@ -22,14 +15,20 @@ import common.money.Percentage;
  */
 // TODO-03:  Map this class using JPA Annotations.  See schema.sql file
 // for guidance on table and column names.
+@Entity
+@Table(name="T_RESTAURANT")
 public class Restaurant {
-
+	@Id
+	@Column(name="ID")
 	private Long entityId;
 
+	@Column(name="MERCHANT_NUMBER")
 	private String number;
+
 
 	private String name;
 
+	@AttributeOverride(name="value",column=@Column(name="BENEFIT_PERCENTAGE"))
 	private Percentage benefitPercentage;
 
 

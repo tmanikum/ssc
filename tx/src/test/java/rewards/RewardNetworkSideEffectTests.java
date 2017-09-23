@@ -1,9 +1,5 @@
 package rewards;
 
-import static org.junit.Assert.assertEquals;
-
-import javax.sql.DataSource;
-
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -13,6 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.sql.DataSource;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * A system test that demonstrates how the effects of a given test can affect
@@ -25,13 +26,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /*
  * TODO-06: If you did not do so before, MAKE SURE to revert the propagation
- * attribute back to Propagation.REQUIRED in RewardNetworkIOmpl
+ * attribute back to Propagation.REQUIRED in RewardNetworkImpl
  *<p>
  * TODO-07: Examine the @Test logic below. Note that committed results from the first
  * test will invalidate the assertions in the second test. Run this test, it
  * should fail. Add @Transactional on the class and re-run the test. It should
  * pass. Do you know why?
  */
+@Transactional
 public class RewardNetworkSideEffectTests {
 
 	private static final String SAVINGS_SQL = "select SAVINGS from T_ACCOUNT_BENEFICIARY where NAME = ?";
