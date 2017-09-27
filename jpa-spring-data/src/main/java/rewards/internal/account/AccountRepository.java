@@ -16,7 +16,7 @@ import java.io.Serializable;
 
 //	TODO-04:  Alter this interface to extend a Spring Data Interface.
 //	Define a method that will look up an Account by the provided creditCardNumber.
-public interface AccountRepository<T, ID extends Serializable> extends Repository {
-
+public interface AccountRepository extends Repository<Account, Long> {
+    public Account findByCreditCardNumber(String creditCardNumber);
 
 }

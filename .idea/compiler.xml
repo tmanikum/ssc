@@ -20,6 +20,46 @@
         <module name="jmx-solution" />
         <module name="jpa-spring-data" />
         <module name="jpa-spring-data-solution" />
+        <module name="maven-archiver (1)" />
+        <module name="maven-archiver (10)" />
+        <module name="maven-archiver (11)" />
+        <module name="maven-archiver (12)" />
+        <module name="maven-archiver (13)" />
+        <module name="maven-archiver (14)" />
+        <module name="maven-archiver (15)" />
+        <module name="maven-archiver (16)" />
+        <module name="maven-archiver (17)" />
+        <module name="maven-archiver (18)" />
+        <module name="maven-archiver (19)" />
+        <module name="maven-archiver (2)" />
+        <module name="maven-archiver (20)" />
+        <module name="maven-archiver (21)" />
+        <module name="maven-archiver (22)" />
+        <module name="maven-archiver (23)" />
+        <module name="maven-archiver (24)" />
+        <module name="maven-archiver (25)" />
+        <module name="maven-archiver (26)" />
+        <module name="maven-archiver (27)" />
+        <module name="maven-archiver (28)" />
+        <module name="maven-archiver (29)" />
+        <module name="maven-archiver (3)" />
+        <module name="maven-archiver (30)" />
+        <module name="maven-archiver (31)" />
+        <module name="maven-archiver (32)" />
+        <module name="maven-archiver (33)" />
+        <module name="maven-archiver (34)" />
+        <module name="maven-archiver (35)" />
+        <module name="maven-archiver (36)" />
+        <module name="maven-archiver (37)" />
+        <module name="maven-archiver (38)" />
+        <module name="maven-archiver (39)" />
+        <module name="maven-archiver (4)" />
+        <module name="maven-archiver (40)" />
+        <module name="maven-archiver (5)" />
+        <module name="maven-archiver (6)" />
+        <module name="maven-archiver (7)" />
+        <module name="maven-archiver (8)" />
+        <module name="maven-archiver (9)" />
         <module name="ms-accounts-server" />
         <module name="ms-accounts-server-solution" />
         <module name="ms-discovery-server" />
@@ -64,6 +104,46 @@
       <module name="jmx-solution" target="1.8" />
       <module name="jpa-spring-data" target="1.8" />
       <module name="jpa-spring-data-solution" target="1.8" />
+      <module name="maven-archiver (1)" target="1.5" />
+      <module name="maven-archiver (10)" target="1.5" />
+      <module name="maven-archiver (11)" target="1.5" />
+      <module name="maven-archiver (12)" target="1.5" />
+      <module name="maven-archiver (13)" target="1.5" />
+      <module name="maven-archiver (14)" target="1.5" />
+      <module name="maven-archiver (15)" target="1.5" />
+      <module name="maven-archiver (16)" target="1.5" />
+      <module name="maven-archiver (17)" target="1.5" />
+      <module name="maven-archiver (18)" target="1.5" />
+      <module name="maven-archiver (19)" target="1.5" />
+      <module name="maven-archiver (2)" target="1.5" />
+      <module name="maven-archiver (20)" target="1.5" />
+      <module name="maven-archiver (21)" target="1.5" />
+      <module name="maven-archiver (22)" target="1.5" />
+      <module name="maven-archiver (23)" target="1.5" />
+      <module name="maven-archiver (24)" target="1.5" />
+      <module name="maven-archiver (25)" target="1.5" />
+      <module name="maven-archiver (26)" target="1.5" />
+      <module name="maven-archiver (27)" target="1.5" />
+      <module name="maven-archiver (28)" target="1.5" />
+      <module name="maven-archiver (29)" target="1.5" />
+      <module name="maven-archiver (3)" target="1.5" />
+      <module name="maven-archiver (30)" target="1.5" />
+      <module name="maven-archiver (31)" target="1.5" />
+      <module name="maven-archiver (32)" target="1.5" />
+      <module name="maven-archiver (33)" target="1.5" />
+      <module name="maven-archiver (34)" target="1.5" />
+      <module name="maven-archiver (35)" target="1.5" />
+      <module name="maven-archiver (36)" target="1.5" />
+      <module name="maven-archiver (37)" target="1.5" />
+      <module name="maven-archiver (38)" target="1.5" />
+      <module name="maven-archiver (39)" target="1.5" />
+      <module name="maven-archiver (4)" target="1.5" />
+      <module name="maven-archiver (40)" target="1.5" />
+      <module name="maven-archiver (5)" target="1.5" />
+      <module name="maven-archiver (6)" target="1.5" />
+      <module name="maven-archiver (7)" target="1.5" />
+      <module name="maven-archiver (8)" target="1.5" />
+      <module name="maven-archiver (9)" target="1.5" />
       <module name="ms-accounts-server" target="1.8" />
       <module name="ms-accounts-server-solution" target="1.8" />
       <module name="ms-discovery-server" target="1.8" />

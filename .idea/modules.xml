@@ -16,6 +16,46 @@
       <module fileurl="file://$PROJECT_DIR$/jmx-solution/jmx-solution.iml" filepath="$PROJECT_DIR$/jmx-solution/jmx-solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-spring-data/jpa-spring-data.iml" filepath="$PROJECT_DIR$/jpa-spring-data/jpa-spring-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-spring-data-solution/jpa-spring-data-solution.iml" filepath="$PROJECT_DIR$/jpa-spring-data-solution/jpa-spring-data-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotations-solution/target/maven-archiver/maven-archiver (1).iml" filepath="$PROJECT_DIR$/annotations-solution/target/maven-archiver/maven-archiver (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jms/target/maven-archiver/maven-archiver (10).iml" filepath="$PROJECT_DIR$/jms/target/maven-archiver/maven-archiver (10).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmx-solution/target/maven-archiver/maven-archiver (11).iml" filepath="$PROJECT_DIR$/jmx-solution/target/maven-archiver/maven-archiver (11).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmx/target/maven-archiver/maven-archiver (12).iml" filepath="$PROJECT_DIR$/jmx/target/maven-archiver/maven-archiver (12).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-spring-data-solution/target/maven-archiver/maven-archiver (13).iml" filepath="$PROJECT_DIR$/jpa-spring-data-solution/target/maven-archiver/maven-archiver (13).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-spring-data/target/maven-archiver/maven-archiver (14).iml" filepath="$PROJECT_DIR$/jpa-spring-data/target/maven-archiver/maven-archiver (14).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-accounts-server-solution/target/maven-archiver/maven-archiver (15).iml" filepath="$PROJECT_DIR$/ms-accounts-server-solution/target/maven-archiver/maven-archiver (15).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-accounts-server/target/maven-archiver/maven-archiver (16).iml" filepath="$PROJECT_DIR$/ms-accounts-server/target/maven-archiver/maven-archiver (16).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-discovery-server-solution/target/maven-archiver/maven-archiver (17).iml" filepath="$PROJECT_DIR$/ms-discovery-server-solution/target/maven-archiver/maven-archiver (17).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-discovery-server/target/maven-archiver/maven-archiver (18).iml" filepath="$PROJECT_DIR$/ms-discovery-server/target/maven-archiver/maven-archiver (18).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-web-client-solution/target/maven-archiver/maven-archiver (19).iml" filepath="$PROJECT_DIR$/ms-web-client-solution/target/maven-archiver/maven-archiver (19).iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotations/target/maven-archiver/maven-archiver (2).iml" filepath="$PROJECT_DIR$/annotations/target/maven-archiver/maven-archiver (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-web-client/target/maven-archiver/maven-archiver (20).iml" filepath="$PROJECT_DIR$/ms-web-client/target/maven-archiver/maven-archiver (20).iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvc-solution/target/maven-archiver/maven-archiver (21).iml" filepath="$PROJECT_DIR$/mvc-solution/target/maven-archiver/maven-archiver (21).iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvc/target/maven-archiver/maven-archiver (22).iml" filepath="$PROJECT_DIR$/mvc/target/maven-archiver/maven-archiver (22).iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-ws-solution/target/maven-archiver/maven-archiver (23).iml" filepath="$PROJECT_DIR$/rest-ws-solution/target/maven-archiver/maven-archiver (23).iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-ws/target/maven-archiver/maven-archiver (24).iml" filepath="$PROJECT_DIR$/rest-ws/target/maven-archiver/maven-archiver (24).iml" />
+      <module fileurl="file://$PROJECT_DIR$/rewards-common/target/maven-archiver/maven-archiver (25).iml" filepath="$PROJECT_DIR$/rewards-common/target/maven-archiver/maven-archiver (25).iml" />
+      <module fileurl="file://$PROJECT_DIR$/rewards-db/target/maven-archiver/maven-archiver (26).iml" filepath="$PROJECT_DIR$/rewards-db/target/maven-archiver/maven-archiver (26).iml" />
+      <module fileurl="file://$PROJECT_DIR$/security-solution/target/maven-archiver/maven-archiver (27).iml" filepath="$PROJECT_DIR$/security-solution/target/maven-archiver/maven-archiver (27).iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/target/maven-archiver/maven-archiver (28).iml" filepath="$PROJECT_DIR$/security/target/maven-archiver/maven-archiver (28).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-solution/target/maven-archiver/maven-archiver (29).iml" filepath="$PROJECT_DIR$/spring-boot-solution/target/maven-archiver/maven-archiver (29).iml" />
+      <module fileurl="file://$PROJECT_DIR$/aop-solution/target/maven-archiver/maven-archiver (3).iml" filepath="$PROJECT_DIR$/aop-solution/target/maven-archiver/maven-archiver (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-start/target/maven-archiver/maven-archiver (30).iml" filepath="$PROJECT_DIR$/spring-boot-start/target/maven-archiver/maven-archiver (30).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-intro-solution/target/maven-archiver/maven-archiver (31).iml" filepath="$PROJECT_DIR$/spring-intro-solution/target/maven-archiver/maven-archiver (31).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-intro/target/maven-archiver/maven-archiver (32).iml" filepath="$PROJECT_DIR$/spring-intro/target/maven-archiver/maven-archiver (32).iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-solution/target/maven-archiver/maven-archiver (33).iml" filepath="$PROJECT_DIR$/test-solution/target/maven-archiver/maven-archiver (33).iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/target/maven-archiver/maven-archiver (34).iml" filepath="$PROJECT_DIR$/test/target/maven-archiver/maven-archiver (34).iml" />
+      <module fileurl="file://$PROJECT_DIR$/tx-solution/target/maven-archiver/maven-archiver (35).iml" filepath="$PROJECT_DIR$/tx-solution/target/maven-archiver/maven-archiver (35).iml" />
+      <module fileurl="file://$PROJECT_DIR$/tx/target/maven-archiver/maven-archiver (36).iml" filepath="$PROJECT_DIR$/tx/target/maven-archiver/maven-archiver (36).iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml-dependency-injection-best-practices-solution/target/maven-archiver/maven-archiver (37).iml" filepath="$PROJECT_DIR$/xml-dependency-injection-best-practices-solution/target/maven-archiver/maven-archiver (37).iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml-dependency-injection-best-practices/target/maven-archiver/maven-archiver (38).iml" filepath="$PROJECT_DIR$/xml-dependency-injection-best-practices/target/maven-archiver/maven-archiver (38).iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml-di-solution/target/maven-archiver/maven-archiver (39).iml" filepath="$PROJECT_DIR$/xml-di-solution/target/maven-archiver/maven-archiver (39).iml" />
+      <module fileurl="file://$PROJECT_DIR$/aop/target/maven-archiver/maven-archiver (4).iml" filepath="$PROJECT_DIR$/aop/target/maven-archiver/maven-archiver (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml-di/target/maven-archiver/maven-archiver (40).iml" filepath="$PROJECT_DIR$/xml-di/target/maven-archiver/maven-archiver (40).iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaconfig-dependency-injection-solution/target/maven-archiver/maven-archiver (5).iml" filepath="$PROJECT_DIR$/javaconfig-dependency-injection-solution/target/maven-archiver/maven-archiver (5).iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaconfig-dependency-injection/target/maven-archiver/maven-archiver (6).iml" filepath="$PROJECT_DIR$/javaconfig-dependency-injection/target/maven-archiver/maven-archiver (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc-solution/target/maven-archiver/maven-archiver (7).iml" filepath="$PROJECT_DIR$/jdbc-solution/target/maven-archiver/maven-archiver (7).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/target/maven-archiver/maven-archiver (8).iml" filepath="$PROJECT_DIR$/jdbc/target/maven-archiver/maven-archiver (8).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jms-solution/target/maven-archiver/maven-archiver (9).iml" filepath="$PROJECT_DIR$/jms-solution/target/maven-archiver/maven-archiver (9).iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-accounts-server/ms-accounts-server.iml" filepath="$PROJECT_DIR$/ms-accounts-server/ms-accounts-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-accounts-server-solution/ms-accounts-server-solution.iml" filepath="$PROJECT_DIR$/ms-accounts-server-solution/ms-accounts-server-solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/ms-discovery-server/ms-discovery-server.iml" filepath="$PROJECT_DIR$/ms-discovery-server/ms-discovery-server.iml" />

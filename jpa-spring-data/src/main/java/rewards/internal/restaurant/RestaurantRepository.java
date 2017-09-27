@@ -14,6 +14,6 @@ import java.io.Serializable;
 
 //	TODO-05: Alter this interface to extend a Spring Data Interface.
 //	Define a method that will look up a Restaurant by a provided merchant number.
-public interface RestaurantRepository<T, ID extends Serializable> extends Repository<T,ID> {
-
+public interface RestaurantRepository extends Repository<Restaurant, Long> {
+    public Restaurant findByNumber(String merchantNumber);
 }

@@ -12,44 +12,52 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/tx/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/aop/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jms/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jmx/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/mvc/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/test/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/xml-di/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-ws/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/security/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/rewards-db/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/tx-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/aop-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jms-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jmx-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/mvc-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/spring-intro/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jdbc-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/ms-web-client/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/test-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/rewards-common/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jpa-spring-data/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/xml-di-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/rest-ws-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/security-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-start/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/ms-accounts-server/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/ms-discovery-server/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/annotations-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/spring-intro-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/ms-web-client-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/jpa-spring-data-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/ms-accounts-server-solution/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/ms-discovery-server-solution/bin/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-discovery-server-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/javaconfig-dependency-injection/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/xml-dependency-injection-best-practices/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/javaconfig-dependency-injection-solution/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/xml-dependency-injection-best-practices-solution/target/maven-archiver/pom.properties" />
       </list>
     </option>
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state />
-    </entry>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
