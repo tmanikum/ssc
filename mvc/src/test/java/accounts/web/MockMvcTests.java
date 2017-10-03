@@ -1,10 +1,7 @@
 package accounts.web;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
+import config.MvcConfig;
+import config.RootConfig;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,8 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import config.MvcConfig;
-import config.RootConfig;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
  * TODO-09: EXTRA CREDIT Mock MVC Testing
@@ -92,6 +89,7 @@ public class MockMvcTests {
 	 * @throws Exception
 	 *             If anything fails.
 	 */
+
 	@Test
 	public void getAccountTest() throws Exception {
 		this.mockMvc
@@ -107,7 +105,9 @@ public class MockMvcTests {
 				// 2b. That the attribute has the correct name
 				// 2c. That we are being forwarded to the right JSP
 				// 3. Rerun the tests until they all pass.
-				.andExpect(status().isNotFound());
+				        .andExpect(status().isOk())
+				        .andExpect(model().attributeExists("account"))
+				        .andExpect(forwardedUrl("/WEB-INF/views/accountDetails.jsp"));
 	}
 
 }
